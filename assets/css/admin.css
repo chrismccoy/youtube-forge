@@ -1,0 +1,320 @@
+/**
+ * YouTube Forge admin styles.
+ */
+
+#ytf-terminal {
+	background: #0b0b0b;
+	color: #33ff66;
+	font-family: Menlo, Consolas, "Courier New", monospace;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 12px;
+	height: 340px;
+	overflow: auto;
+	white-space: pre-wrap;
+	word-break: break-all;
+	border-radius: 4px;
+	margin: 8px 0;
+}
+
+#ytf-terminal .ytf-line-broken {
+	color: #ff6b6b;
+}
+
+#ytf-terminal .ytf-line-ok {
+	color: #9be89b;
+}
+
+#ytf-terminal .ytf-line-warn {
+	color: #ffd166;
+}
+
+#ytf-terminal .ytf-line-done {
+	color: #7fd1ff;
+	font-weight: bold;
+}
+
+#ytf-counts {
+	margin-left: 8px;
+	color: #555;
+}
+
+#ytf-report {
+	margin-top: 12px;
+}
+
+.ytf-report-table td {
+	vertical-align: middle;
+}
+
+.ytf-report-table .ytf-col-type,
+.ytf-report-table .ytf-col-actions,
+.ytf-report-table .ytf-actions {
+	width: 1%;
+	white-space: nowrap;
+}
+
+.ytf-report-table .ytf-url a {
+	word-break: break-all;
+}
+
+.ytf-stack-item {
+	padding: 4px 0;
+}
+
+.ytf-stack-item + .ytf-stack-item {
+	border-top: 1px solid #f0f0f1;
+	margin-top: 4px;
+}
+
+.ytf-status {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	background: #f8d7da;
+	color: #842029;
+	font-weight: 600;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+
+.ytf-actions {
+	white-space: nowrap;
+}
+
+.ytf-trashed-label {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+}
+
+.ytf-state-trashed {
+	background: #d7ecd9;
+	color: #14611c;
+}
+
+.ytf-state-deleted {
+	background: #f8d7da;
+	color: #842029;
+}
+
+.ytf-resolved-line.is-hidden {
+  display: none;
+}
+
+.ytf-resolved {
+	display: inline-block;
+	margin-top: 6px;
+	padding: 3px 10px;
+	border-radius: 3px;
+	background: #d7ecd9;
+	color: #14611c;
+	font-weight: 600;
+}
+
+.ytf-actions .button {
+	margin: 2px 4px 2px 0;
+}
+
+button.ytf-trash {
+	color: #b32d2e;
+	border-color: #b32d2e;
+}
+
+button.ytf-trash:hover:not( :disabled ),
+button.ytf-trash:focus:not( :disabled ) {
+	background: #b32d2e;
+	border-color: #b32d2e;
+	color: #fff;
+}
+
+.ytf-report-actions {
+	margin: 0 0 8px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.ytf-report-actions .button.ytf-trash-all {
+	color: #b32d2e;
+	border-color: #b32d2e;
+}
+
+.ytf-report-actions .button.ytf-trash-all:hover:not( :disabled ),
+.ytf-report-actions .button.ytf-trash-all:focus:not( :disabled ) {
+	background: #b32d2e;
+	border-color: #b32d2e;
+	color: #fff;
+}
+
+.ytf-trash-all-status {
+	color: #50575e;
+	font-size: 12px;
+}
+
+.ytf-multi {
+	display: inline-block;
+	margin-left: 6px;
+	padding: 1px 7px;
+	border-radius: 3px;
+	background: #fcf0e5;
+	color: #8a4b00;
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.ytf-settings-card {
+	margin: 12px 0;
+	padding: 12px;
+	max-width: 720px;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+}
+
+.ytf-settings-card h2 {
+	margin-top: 0;
+}
+
+.ytf-settings-card hr {
+	margin: 16px 0;
+}
+
+.ytf-setting-status {
+	margin: 12px 0 0;
+	font-weight: 600;
+}
+
+.ytf-setting-status:empty {
+	margin: 0;
+}
+
+.ytf-ok {
+	color: #116611;
+}
+
+.ytf-bad {
+	color: #a00000;
+}
+
+.ytf-saved {
+	margin: 4px 0 0;
+	color: #50575e;
+}
+
+#ytf-key-health {
+	margin-top: 8px;
+	font-family: Menlo, Consolas, monospace;
+	font-size: 12px;
+}
+
+.ytf-post-types {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 16px;
+	margin: 8px 0 12px;
+}
+
+.ytf-pt-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 4px 8px;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	background: #f6f7f7;
+}
+
+.ytf-pt-item code {
+	font-size: 11px;
+	color: #50575e;
+	background: none;
+}
+
+.ytf-scan-msg {
+	margin: 8px 0 0;
+	font-weight: 600;
+}
+
+.ytf-scan-msg:empty {
+	margin: 0;
+}
+
+.ytf-modal-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba( 0, 0, 0, 0.5 );
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100000;
+}
+
+.ytf-modal {
+	background: #fff;
+	border-radius: 6px;
+	padding: 20px 22px;
+	width: 90%;
+	max-width: 420px;
+	box-shadow: 0 10px 40px rgba( 0, 0, 0, 0.3 );
+}
+
+.ytf-modal p {
+	margin: 0 0 18px;
+	font-size: 14px;
+}
+
+.ytf-modal-urls {
+	margin: 0 0 18px;
+	padding: 8px 10px;
+	max-height: 180px;
+	overflow: auto;
+	list-style: none;
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	font-family: Menlo, Consolas, monospace;
+	font-size: 12px;
+}
+
+.ytf-modal-urls li {
+	margin: 0 0 4px;
+	word-break: break-all;
+}
+
+.ytf-modal-urls li:last-child {
+	margin-bottom: 0;
+}
+
+.ytf-modal-actions {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+}
+
+.ytf-modal-delete,
+.ytf-modal-delete:hover,
+.ytf-modal-delete:focus {
+	background: #b32d2e;
+	border-color: #b32d2e;
+	color: #fff;
+}
+
+.ytf-log-entry {
+	margin: 12px 0;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 4px;
+}
+
+.ytf-log-entry > summary {
+	cursor: pointer;
+	font-weight: 600;
+}
